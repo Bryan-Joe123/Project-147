@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Room Design</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/sky.jpg"></a-sky>
+      <!-- Floor and Walls -->
+      <a-entity>
+        <!-- Floor -->
+        <a-entity>
+          <a-plane src="Marble023_2K_Color.jpg" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+        </a-entity>
+
+        <!-- Walls -->
+        <a-entity>
+          <a-plane src="WoodFloor043_2K_Color.jpg" position="0 5 -5" rotation="0 0 0" width="20" height="10"></a-plane>
+          
+
+          <!-- Paintings -->
+          <a-plane src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqFg0FuOINqlG6pmfyOjnF3zXodQz6tGVrQ&usqp=CAU" position="0 5 -4.9" rotation="0 0 0" width="3" height="5"></a-plane>
+          <a-plane src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJl-wu5r4aO6p98lokKSe5prOwpIehsC9rQ&usqp=CAU"position="5 5 -4.9" rotation="0 0 0" width="3" height="5"></a-plane>
+          <a-plane src="data:image/jpeg;base64,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"position="-5 5 -4.9" rotation="0 0 0" width="3" height="5"></a-plane>
+        </a-entity>
+      </a-entity>
+
+      !-- Chair 1 -->
+      <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="1.2"
+        position="6.5 -0.4 0">
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="0.2"
+          position="0 1 0" height="1.2">
+        </a-cylinder>
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" position="0 1.9 0"
+          rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" position="0.85 3 0"
+          rotation="90 -90 0" radius="1.3" height="0.2"></a-cylinder>
+      </a-cylinder>
+      
+      <!-- Chair 2  -->
+      
+      <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="1.2"
+        position="-6.5 -0.4 0">
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="0.2"
+          position="0 1 0" height="1.2">
+        </a-cylinder>
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" position="0 1.9 0"
+          rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" position="-0.85 3 0"
+          rotation="90 -90 0" radius="1.3" height="0.2"></a-cylinder>
+      </a-cylinder>
+      
+      <!-- Dining Table -->
+      <a-box src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg" width="9"
+        height="3.5" position="0 2 0" rotation="90 0 0" depth="0.2">
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg" height="2"
+          radius="0.8" rotation="90 0 0" position="0 0 1"></a-cylinder>
+      </a-box>
+      
+      <!-- Lamp -->
+      
+      <a-cone color="pink" position="0 7.5 0" radius-top="0.5" radius-bottom="2">
+        <a-sphere color="#fff176" position="0 -0.5 0"></a-sphere>
+        <a-cylinder color="pink" radius="0.15" height="4" position="0 2 0"></a-cylinder>
+      </a-cone>
+
+      <!--  --------- CAMERA --------- -->
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 10 15"></a-camera>
+    </a-scene>
+    <!-- Closing scene -->
+  </body>
+</html>
